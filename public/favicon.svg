@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1109)"><rect width="1000" height="1000" fill="#0f0f11"></rect><g transform="matrix(3.5,0,0,3.5,150,150)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle Border -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#f4f4f6" stroke-width="10"></circle>
+
+  <!-- J -->
+  <path d="M60 40 H80 V115 
+           C80 135 70 145 55 145 
+           H45 V130 H55 
+           C63 130 65 123 65 115 
+           V40 Z" fill="#ffffff"></path>
+
+  <!-- R -->
+  <path d="M100 40 H140 
+           C153 40 160 50 160 65 
+           C160 80 153 90 140 90 
+           H120 V40 Z
+           
+           M120 90 L140 145 H120 L105 90 Z" fill="#ffffff"></path>
+</svg></svg></g></g><defs><clipPath id="SvgjsClipPath1109"><rect width="1000" height="1000" x="0" y="0" rx="500" ry="500"></rect></clipPath></defs></svg>

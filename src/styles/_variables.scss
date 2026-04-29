@@ -1,0 +1,25 @@
+$mobile_width: 640px;
+$tablet_width: 768px;
+$desktop_width: 1024px;
+$wide_width: 1280px;
+$full_width: 1536px;
+
+:root {
+  // colors — enemies & projectiles
+  --color-blue: #4C6EF5;
+  --color-red: #FF4757;
+  --color-green: #2ED573;
+  --color-yellow: #FFD32A;
+  --color-orange: #FF6B35;
+  --color-purple: #9B59B6;
+
+  // neutrals — arena & UI
+  --color-arena: #F0F0F0;
+  --color-night: #1A1A2E;
+  --color-black: #0D0D1A;
+  --color-white: #FFFFFF;
+
+  // typography
+  --font-heading: 'Rubik Wet Paint', cursive;
+  --font-body: 'Play', sans-serif;
+}

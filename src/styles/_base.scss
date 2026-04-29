@@ -1,0 +1,81 @@
+@use './variables';
+@use './mixins';
+
+body {
+  background: var(--color-night);
+  color: var(--color-white);
+  margin: 0;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+
+main {
+  height: 100dvh;
+  width: 100dvw;
+}
+
+
+h1 {
+  font-family: var(--font-heading);
+  margin: 0 0 1.2rem;
+  font-size: 2.5rem;
+  @include mixins.media(mobile) {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  @include mixins.media(desktop) {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+h2 {
+  font-family: var(--font-heading);
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  @include mixins.media(mobile) {
+    font-size: 2.5rem;
+  }
+  @include mixins.media(desktop) {
+    font-size: 3rem;
+  }
+}
+h3 {
+  font-family: var(--font-body);
+  margin: 0 0 .75rem;
+  font-size: 1.25rem;
+  @include mixins.media(mobile) {
+    font-size: 1.75rem;
+  }
+}
+h4 {
+  font-family: var(--font-body);
+  margin: 0 0 .5rem;
+  font-size: 1rem;
+  @include mixins.media(mobile) {
+    font-size: 1.25rem;
+  }
+}
+h5 {
+  font-family: var(--font-body);
+  margin: 0 0 .5rem;
+  font-size: 0.875rem;
+  @include mixins.media(mobile) {
+    font-size: 1rem;
+  }
+}
+h6 {
+  font-family: var(--font-body);
+  margin: 0 0 .5rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  @include mixins.media(mobile) {
+    font-size: 0.875rem;
+  }
+}
+p, span, a, li {
+  font-family: var(--font-body);
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}

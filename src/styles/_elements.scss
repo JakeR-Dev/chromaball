@@ -1,0 +1,75 @@
+@use './variables';
+@use './mixins';
+
+.btn {
+  padding: 8px 12px;
+  text-align: center;
+  display: inline-block;
+  background: var(--color-night);
+  color: var(--color-white);
+  appearance: none;
+  border: 2px solid var(--color-white);
+  border-radius: 2px;
+  transition: all .1s linear;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .75rem;
+  &:hover {
+    background: var(--color-white);
+    color: var(--color-night);
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  @include mixins.media(mobile) {
+    padding: 2rem;
+  }
+}
+
+.game-screen {
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--color-arena);
+}
+
+.pov-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  cursor: default;
+}
+.pov {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  cursor: crosshair;
+}
+
+.welcome-screen {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
