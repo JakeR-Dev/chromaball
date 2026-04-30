@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Adversary } from './Adversary'
 
 // how aggressive the parallax effect is
 const max_parallax_offset = 48
@@ -31,12 +32,19 @@ export const Game = () => {
     } as React.CSSProperties)
   }
 
+  const handleClick = () => {
+    
+  }
+
   return (
     <div
       className="game"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
       style={backgroundPosition}
-    />
+    >
+      <Adversary />
+    </div>
   )
 }

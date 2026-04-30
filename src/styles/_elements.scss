@@ -30,6 +30,14 @@
   }
 }
 
+.welcome-screen {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .game-screen {
   position: relative;
   width: 100vw;
@@ -57,24 +65,25 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  --bg-pos-x: 50%;
-  --bg-pos-y: 50%;
   z-index: 9;
   cursor: crosshair;
-  transition: background-position 120ms ease-out;
+  transition: background-position 100ms linear;
   background: {
     image: url('../assets/snowy-backdrop.webp');
     size: cover;
+    color: var(--color-arena);
     // this is updated dynamically in Game.tsx based on player cursor position
     position: var(--bg-pos-x) var(--bg-pos-y);
-    color: var(--color-arena);
   }
 }
 
-.welcome-screen {
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+.adversary {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-arena);
+  // random position from top: 0 to 100vh, left: 0 to 100vw
+  // random animation direction and speed from 2s to 5s, linear, once
+  // fade out after the direction animation is complete
 }
