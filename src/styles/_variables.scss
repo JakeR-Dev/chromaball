@@ -23,7 +23,11 @@ $full_width: 1536px;
   --font-heading: 'Rubik Wet Paint', cursive;
   --font-body: 'Play', sans-serif;
 
-  // bg image perspective shift
+  // default bg image position
   --bg-pos-x: 50%;
   --bg-pos-y: 50%;
+
+  // default adversary position
+  --adversary-x: 35%;
+  --adversary-y: 75%;
 }
