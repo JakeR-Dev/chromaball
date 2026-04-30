@@ -13,17 +13,29 @@ export const POV = () => {
           <mask id="goggle-cutout">
             <rect width="100%" height="100%" fill="white"/>
 
-            <path d="
-              M140,300
-              C140,160 320,90 600,90
-              C880,90 1060,160 1060,300
-              C1060,440 880,510 600,510
-              C320,510 140,440 140,300
-              Z" fill="black" fillRule="evenodd"/>
+            <path
+              fill="black"
+              fillRule="evenodd"
+              d="
+                M120,260
+                C120,180 180,130 260,120
+                L940,120
+                C1020,130 1080,180 1080,260
+                L1080,380
+                C1080,460 1020,510 940,520
+                L720,520
+                C680,520 650,500 630,460
+                C615,430 585,430 570,460
+                C550,500 520,520 480,520
+                L260,520
+                C180,510 120,460 120,380
+                Z
+              "
+            />
           </mask>
         </defs>
 
-        <rect width="100%" height="100%" fill="#1A1A2E" mask="url(#goggle-cutout)"/>
+        <rect width="100%" height="100%" fill="#0D0D1A" mask="url(#goggle-cutout)"/>
       </svg>
     </div>
   )

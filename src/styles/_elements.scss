@@ -39,21 +39,16 @@
 }
 
 .pov-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   z-index: 10;
   cursor: default;
-}
-.pov {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  &, .pov {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
 }
 
 .game {
@@ -62,8 +57,18 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  --bg-pos-x: 50%;
+  --bg-pos-y: 50%;
   z-index: 9;
   cursor: crosshair;
+  transition: background-position 120ms ease-out;
+  background: {
+    image: url('../assets/snowy-backdrop.webp');
+    size: cover;
+    // this is updated dynamically in Game.tsx based on player cursor position
+    position: var(--bg-pos-x) var(--bg-pos-y);
+    color: var(--color-arena);
+  }
 }
 
 .welcome-screen {
