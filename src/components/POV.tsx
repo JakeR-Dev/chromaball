@@ -1,6 +1,11 @@
-export const POV = () => {
+type POVProps = {
+  score: number;
+};
+
+export const POV = ({ score }: POVProps) => {
   return (
     <div className="pov-wrapper">
+      {/* goggles overlay */}
       <svg
         className="pov"
         viewBox="0 0 1200 600"
@@ -17,18 +22,18 @@ export const POV = () => {
               fill="black"
               fillRule="evenodd"
               d="
-                M120,260
-                C120,180 180,130 260,120
-                L940,120
-                C1020,130 1080,180 1080,260
-                L1080,380
-                C1080,460 1020,510 940,520
-                L720,520
-                C680,520 650,500 630,460
-                C615,430 585,430 570,460
-                C550,500 520,520 480,520
-                L260,520
-                C180,510 120,460 120,380
+                M100,210
+                C100,110 180,60 280,50
+                L920,50
+                C1020,60 1100,110 1100,210
+                L1100,390
+                C1100,490 1020,540 920,550
+                L720,550
+                C680,550 655,535 635,528
+                C615,495 585,495 565,528
+                C545,535 520,550 480,550
+                L280,550
+                C180,540 100,490 100,390
                 Z
               "
             />
@@ -37,6 +42,11 @@ export const POV = () => {
 
         <rect width="100%" height="100%" fill="#0D0D1A" mask="url(#goggle-cutout)"/>
       </svg>
+
+      {/* HUD */}
+      <div className="hud">
+        <span className="score">Score: {score}</span>
+      </div>
     </div>
   )
 }

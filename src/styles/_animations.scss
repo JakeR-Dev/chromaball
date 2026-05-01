@@ -1,0 +1,150 @@
+// adversary animation directions
+// these need to be improved to be more dynamic and less linear, but this is a good start
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  5% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  95% {
+    transform: translateY(-50vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+}
+@keyframes move-down {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  5% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  95% {
+    transform: translateY(50vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50vh);
+    opacity: 0;
+  }
+}
+@keyframes move-left {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  5% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  95% {
+    transform: translateX(-50vw);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50vw);
+  }
+}
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  5% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  95% {
+    transform: translateX(50vw);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50vw);
+  }
+}
+// left, up
+@keyframes move-left-move-up {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  5% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  95% {
+    transform: translate(-50vw, -50vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50vw, -50vh);
+    opacity: 0;
+  }
+}
+// right up
+@keyframes move-right-move-up {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  5% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  95% {
+    transform: translate(50vw, -50vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(50vw, -50vh);
+    opacity: 0;
+  }
+}
+// left down
+@keyframes move-left-move-down {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  5% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  95% {
+    transform: translate(-50vw, 50vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50vw, 50vh);
+    opacity: 0;
+  }
+}
+// right down
+@keyframes move-right-move-down {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  5% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  95% {
+    transform: translate(50vw, 50vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(50vw, 50vh);
+    opacity: 0;
+  }
+}
